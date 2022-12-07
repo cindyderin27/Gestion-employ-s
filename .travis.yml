@@ -14,7 +14,7 @@ jobs:
                     - composer install
 
             - stage: deploy
-              if: repo = cindyderin27/Gestion-emply-s and branch = main and type = push
+              if: repo = cindyderin27/Gestion-employ-s and branch = main and type = push
               os: windows
               php: "5.5.12"
               deploy:
