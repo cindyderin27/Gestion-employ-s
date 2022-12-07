@@ -1,7 +1,29 @@
 language: php
 
-deploy:
-      provider: heroku
-      api_key: 6236879f-8005-4ff9-809d-2715d35043de
-      app: gestion-employ-s
+os:
+      - windows
+
+php:
+      - "5.5.12"
+      - "8.0.12"
+
+jobs:
+      include:
+            - php: "5.5.12"
+              before_script:
+                    - composer install
+
+            - stage: deploy
+              if: repo = cindyderin27/Gestion-emply-s and branch = main and type = push
+              os: windows
+              php: "5.5.12"
+              deploy:
+                    provider: heroku
+                    api_key:
+                          secure: 6236879f-8005-4ff9-809d-2715d35043de
+                    gem: travis
+                    edge: true
+
+
+
 
