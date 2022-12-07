@@ -36,7 +36,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1547839651080</updated>
-      <workItem from="1670329891086" duration="6711000" />
+      <workItem from="1670329891086" duration="7042000" />
     </task>
     <task id="LOCAL-00001" summary="modify travis.yml file version 1">
       <created>1670391848964</created>
@@ -87,7 +87,21 @@
       <option name="project" value="LOCAL" />
       <updated>1670395765745</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="modify travis.yml file version 6">
+      <created>1670396295145</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1670396295145</updated>
+    </task>
+    <task id="LOCAL-00009" summary="modify travis.yml file version 6">
+      <created>1670396315893</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1670396315893</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -99,6 +113,7 @@
     <MESSAGE value="modify travis.yml file version 3" />
     <MESSAGE value="modify travis.yml file version 4" />
     <MESSAGE value="modify travis.yml file version 5" />
-    <option name="LAST_COMMIT_MESSAGE" value="modify travis.yml file version 5" />
+    <MESSAGE value="modify travis.yml file version 6" />
+    <option name="LAST_COMMIT_MESSAGE" value="modify travis.yml file version 6" />
   </component>
 </project>

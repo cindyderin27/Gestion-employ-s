@@ -21,7 +21,6 @@ jobs:
                     provider: heroku
                     api_key:
                           secure: 6236879f-8005-4ff9-809d-2715d35043de
-                    gem: travis
                     edge: true
 
 
