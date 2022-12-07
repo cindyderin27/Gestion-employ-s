@@ -1,11 +1,16 @@
 language: php
 php:
       - 5.6
-      - 7.0
+      - 7.1
 jobs:
       include:
-            - php: 7.0
-              env: KEY=VALUE
+            - php: 7.1
+
       allow_failures:
-            - php: 7.0
-              env: KEY=VALUE
+            - php: 7.1
+
+deploy:
+      provider: heroku
+      api_key: 6236879f-8005-4ff9-809d-2715d35043de
+      app: gestion-employ-s
+
