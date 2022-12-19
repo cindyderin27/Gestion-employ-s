@@ -10,11 +10,11 @@ before_script:
   - mysql -e 'CREATE DATABASE IF NOT EXISTS customers;' -u root
 
 script:
- # - php index.php
+  - php index.php
   - echo "app is ready to deploy"
 
 deploy:
   provider: script
-  script: bash ./deploy.sh
+  script: echo "start deploy"
   on:
     branch: main
