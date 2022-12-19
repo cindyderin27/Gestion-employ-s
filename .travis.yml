@@ -7,7 +7,7 @@ services:
   - mysql
 
 before_script:
-  - mysql -e 'CREATE DATABASE IF NOT EXIST customers;' -u root
+  - mysql -e 'CREATE DATABASE IF NOT EXISTS customers;' -u root
 
 script:
  # - php index.php
