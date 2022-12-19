@@ -1,28 +1,18 @@
 language: php
 
-os:
-      - windows
-
 php:
-      - "5.5.12"
-      - "8.0.12"
+  - 8.0.1
 
-jobs:
-      include:
-            - php: "5.5.12"
-              before_script:
-                    - composer install
+services:
+  - mysql
 
-            - stage: deploy
-              if: repo = cindyderin27/Gestion-employ-s and branch = main and type = push
-              os: windows
-              php: "5.5.12"
-              deploy:
-                    provider: heroku
-                    api_key:
-                          secure: 6236879f-8005-4ff9-809d-2715d35043de
-                    edge: true
+before_script:
+  - mysql -e 'CREATE DATABASE IF NOT EXIST customers;' -U root
 
+script:
+ # - php index.php
+  - echo "app is ready to deploy"
 
-
-
+deploy:
+  provider: script
+  script: bash ./deploy.sh
